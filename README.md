@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 SalesAI — AI Sales Page Generator
 
-## Getting Started
+**Build high-converting sales pages with AI. Choose from 3 premium templates. No coding required.**
 
-First, run the development server:
+![SalesAI OG Image](public/og-image.svg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🔐 User Authentication
+- Register, login, logout with email verification
+- Protected routes (dashboard, generate, history)
+- Supabase Auth with Row Level Security
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🤖 AI-Powered Generation
+- Generate complete sales pages from product info
+- Powered by **Llama 3.3 70B** via Groq API
+- Structured JSON output for consistent results
 
-## Learn More
+### 🎨 3 Premium Templates
+| Template | Style | Best For |
+|----------|-------|----------|
+| **Modern Glass** | Energetic, conversational, emoji-friendly | SaaS & Tech products |
+| **Dark Luxury** | Sophisticated, exclusive, elegant | Premium & High-end brands |
+| **Minimalist** | Clean, direct, Apple-style | Modern & Simple brands |
 
-To learn more about Next.js, take a look at the following resources:
+### 📱 Fully Responsive
+- Mobile, Tablet, Desktop optimized
+- Collapsible sidebar with mobile hamburger menu
+- Touch-friendly UI elements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🌙 Dark Mode
+- Full light/dark mode toggle
+- Persistent preference (localStorage)
+- Smooth transitions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📥 Export & Download
+- Live preview of generated sales page
+- Download as standalone HTML file
+- All CSS inline — ready to publish
 
-## Deploy on Vercel
+### 📊 Dashboard
+- Stats overview (pages generated, conversion rate, credits)
+- Quick action cards
+- Generation history with search & delete
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🎯 Bonus Features
+- Custom 404 page
+- Loading skeletons
+- Toast notifications
+- Profile dropdown
+- Notification panel (UI)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| **Framework** | Next.js 16 (App Router) |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS v4 |
+| **UI Components** | shadcn/ui |
+| **Icons** | Lucide React |
+| **Animations** | Framer Motion |
+| **Auth** | Supabase Auth |
+| **Database** | Supabase (PostgreSQL) |
+| **AI** | Groq (Llama 3.3 70B) |
+| **Deployment** | Vercel |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- Supabase account (free)
+- Groq API key (free)
+
+### Installation
+
+1. **Clone the repository**
+```bash```
+git clone https://github.com/yourusername/ai-sales-page.git
+cd ai-sales-page
+
+### Install dependencies
+npm install
+
+### Set up environment variables
+.env.local
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+GROQ_API_KEY=your_groq_api_key

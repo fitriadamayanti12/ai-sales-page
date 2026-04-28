@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="10" y="10" width="160" height="160" rx="36" fill="url(#bg)"/>
+  
+  <!-- Sparkle -->
+  <path d="M90 30L96 85L140 90L96 95L90 150L84 95L40 90L84 85L90 30Z" 
+        fill="white" 
+        stroke="rgba(0,0,0,0.06)" 
+        stroke-width="2"/>
+  
+  <!-- Small sparkles -->
+  <circle cx="55" cy="55" r="5" fill="white" opacity="0.5"/>
+  <circle cx="125" cy="55" r="4" fill="white" opacity="0.4"/>
+  <circle cx="125" cy="125" r="5.5" fill="white" opacity="0.45"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Logo -->
+  <rect x="60" y="60" width="80" height="80" rx="20" fill="url(#text)"/>
+  <path d="M100 40L102 73L130 100L102 102L100 135L98 102L70 100L98 73L100 40Z" 
+        fill="white" 
+        stroke="rgba(0,0,0,0.1)" 
+        stroke-width="1.5"/>
+  
+  <!-- Title -->
+  <text x="60" y="260" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="900" fill="white" letter-spacing="-0.02em">
+    AI Sales Page
+  </text>
+  <text x="60" y="330" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="900" fill="url(#text)" letter-spacing="-0.02em">
+    Generator
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="60" y="420" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="500" fill="#94a3b8">
+    Build high-converting sales pages with AI. 3 premium templates.
+  </text>
+  
+  <!-- Bottom bar -->
+  <rect x="60" y="520" width="360" height="6" rx="3" fill="url(#text)"/>
+</svg>
