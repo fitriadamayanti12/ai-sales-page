@@ -68,6 +68,17 @@
   50% { transform: translate(-40px, 30px) scale(1.2); }
 }
 
+/* ========== TOPBAR OFFSET ========== */
+.topbar-offset {
+  padding-top: 85px !important;
+}
+
+@media (max-width: 768px) {
+  .topbar-offset {
+    padding-top: 75px !important;
+  }
+}
+
 /* ========== DARK MODE OVERRIDES FULL ========== */
 .dark {
   color-scheme: dark;

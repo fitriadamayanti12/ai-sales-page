@@ -11,9 +11,11 @@ import {
   Settings,
   HelpCircle,
   X,
+  LogOut,
 } from "lucide-react"
 import Link from "next/link"
 import { useTheme } from "@/components/ThemeProvider"
+import { logout } from "@/actions/auth"
 
 export default function TopBar({ userEmail }: { userEmail: string }) {
   const { theme, toggleTheme } = useTheme()
@@ -38,7 +40,10 @@ export default function TopBar({ userEmail }: { userEmail: string }) {
   }, [])
 
   return (
-    <header className="bg-white dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 px-4 md:px-8 py-3 md:py-4 flex items-center justify-between sticky top-0 z-30 shadow-md shadow-slate-200/50 dark:shadow-black/20">
+    <header
+      className="bg-white dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 px-4 md:px-8 py-3 md:py-4 flex items-center justify-between fixed top-0 right-0 z-30 shadow-md shadow-slate-200/50 dark:shadow-black/20"
+      style={{ left: "16rem" }}
+    >
       {/* Left - Search (hidden on mobile, shown on lg) */}
       <div className="flex items-center gap-6 flex-1">
         <div className="relative hidden lg:block">
@@ -211,6 +216,20 @@ export default function TopBar({ userEmail }: { userEmail: string }) {
                     {item.label}
                   </button>
                 ))}
+                
+                {/* Divider */}
+                <div className="border-t border-slate-100 dark:border-gray-800 my-1" />
+                
+                {/* Logout Button */}
+                <form action={logout}>
+                  <button
+                    type="submit"
+                    className="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-red-50 dark:hover:bg-red-900/20 text-sm text-red-500 dark:text-red-400 hover:text-red-600 dark:hover:text-red-300 transition font-medium"
+                  >
+                    <LogOut className="w-4 h-4" />
+                    Logout
+                  </button>
+                </form>
               </div>
             </div>
           )}

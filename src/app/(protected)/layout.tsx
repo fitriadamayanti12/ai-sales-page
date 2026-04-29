@@ -18,14 +18,14 @@ export default async function ProtectedLayout({
   }
 
   return (
-    <div className="min-h-screen flex bg-[#f5f6f8] dark:bg-gray-950">
+    <div className="min-h-screen bg-[#f5f6f8] dark:bg-gray-950">
       <Sidebar userEmail={user?.email || ""} />
-      {/* Margin responsive: lg: 64px/80px collapsed, mobile: 0 */}
-      <div className="flex-1 flex flex-col lg:ml-20 ml-0 transition-all duration-300">
+      
+      <div className="lg:ml-64 transition-all duration-300 flex flex-col min-h-screen">
         <TopBar userEmail={user?.email || ""} />
-        <main className="flex-1 p-4 md:p-8 pt-20 lg:pt-8">
+        <div className="topbar-offset flex-1 p-4 md:p-8">
           {children}
-        </main>
+        </div>
       </div>
     </div>
   )
